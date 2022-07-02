@@ -11,3 +11,5 @@
 - 🍄[unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 一个用于自动导入包API的插件,含自动导入vue vue-router等预设
 - 🏝️[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): 自动导入Vue组件,结合unplugin-icons自动导入图标,自定义图标组件前缀
 - 🎯[unplugin-icons](https://github.com/antfu/unplugin-icons): iconify图标集随心使用，打包时按需打包，组件方式使用图标
+- 💖[eslint](https://github.com/eslint/eslint): 使用eslint规范代码
+- 🐣[prettier](https://github.com/prettier/prettier): 使用prettier作为代码格式化工具，结合[eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)插件一键格式化代码
