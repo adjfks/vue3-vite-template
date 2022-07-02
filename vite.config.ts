@@ -12,11 +12,7 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      include: [
-        /\.[tj]sx?$/,
-        /\.vue$/, /\.vue\?vue/,
-        /\.md$/,
-      ],
+      include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
       imports: ['vue', 'vue-router'],
       // 配置eslint解析规则，防止报错
       eslintrc: {
@@ -28,15 +24,15 @@ export default defineConfig({
     Components({
       resolvers: [
         IconsResolver({
-          prefix: 'i'
-        })
-      ]
+          prefix: 'i',
+        }),
+      ],
     }),
-    Icons({})
+    Icons({}),
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
-  }
+      '@': resolve(__dirname, './src'),
+    },
+  },
 })

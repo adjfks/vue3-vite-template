@@ -9,7 +9,15 @@
     "preinstall": "npx only-pkg pnpm",
     "lint": "npx eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "lp": "prettier {src,mock}/**/*.{html,vue,css,less,ts,md,.json} --write",
-    "sl": "npx stylelint **/*{.less,.css} --fix"
+    "sl": "npx stylelint **/*{.less,.css} --fix",
+    "prepare": "husky install",
+    "pre-commit": "npm run lp && npm run sl && npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "dependencies": {
     "pinia": "^2.0.14",
@@ -25,6 +33,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
     "less": "^4.1.3",
     "only-pkg": "^0.0.1",
     "postcss-html": "^1.4.1",
