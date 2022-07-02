@@ -17,7 +17,8 @@
       "npm run lint"
     ],
     "*.{vue,js,ts,jsx,tsx}": "eslint --cache --fix",
-    "*.{css,less}": "stylelint --fix"
+    "*.{css,less}": "stylelint --fix",
+    "*.css": "stylelint --fix"
   },
   "dependencies": {
     "pinia": "^2.0.14",
