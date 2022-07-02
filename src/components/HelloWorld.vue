@@ -9,6 +9,7 @@ const count = ref(0)
     <h1>hello word</h1>
     <p>{{ index.id }}</p>
     <p>count: {{ count }}</p>
+    <i-carbon-asleep-filled />
   </div>
 </template>
 

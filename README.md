@@ -9,4 +9,5 @@
 - 🌿[VueRouter4](https://github.com/vuejs/router): 提供路由支持
 - 🍍[Pinia2.0.14](https://github.com/vuejs/pinia): 全局状态存储
 - 🍄[unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 一个用于自动导入包API的插件,含自动导入vue vue-router等预设
-- 🏝️[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): 自动导入Vue组件
+- 🏝️[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): 自动导入Vue组件,结合unplugin-icons自动导入图标,自定义图标组件前缀
+- 🎯[unplugin-icons](https://github.com/antfu/unplugin-icons): iconify图标集随心使用，打包时按需打包，组件方式使用图标
