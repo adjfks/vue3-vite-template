@@ -12,17 +12,12 @@
     "stylelint": "npx stylelint **/*{.less,.css} --fix",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,vue}": [
-      "npm run lint",
-      "npm run lint:prettier",
-      "npm run stylelint"
-    ]
+      "npm run lint"
+    ],
+    "*.{vue,js,ts,jsx,tsx}": "eslint --cache --fix",
+    "*.{css,less}": "stylelint --fix"
   },
   "dependencies": {
     "pinia": "^2.0.14",
@@ -41,6 +36,7 @@
     "husky": "^8.0.1",
     "less": "^4.1.3",
     "lint-staged": "^13.0.3",
+    "mrm": "^4.0.0",
     "only-pkg": "^0.0.1",
     "postcss-html": "^1.4.1",
     "postcss-less": "^6.0.0",

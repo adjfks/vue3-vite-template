@@ -2,6 +2,7 @@
 import { useIndex } from '@/stores/index'
 const index = useIndex()
 const count = ref(0)
+const a = 1
 </script>
 
 <template>
