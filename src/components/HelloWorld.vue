@@ -9,6 +9,7 @@ const count = ref(0)
     <h1>hello word</h1>
     <p>{{ index.id }}</p>
     <p>count: {{ count }}</p>
+    <div class="test-stylelint">hahah1</div>
     <i-carbon-asleep-filled />
   </div>
 </template>
@@ -18,6 +19,12 @@ const count = ref(0)
   h1 {
     font-weight: 700;
     color: red;
+  }
+
+  .test-stylelint {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 </style>
