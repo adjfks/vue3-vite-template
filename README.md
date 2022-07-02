@@ -13,3 +13,4 @@
 - 🎯[unplugin-icons](https://github.com/antfu/unplugin-icons): iconify图标集随心使用，打包时按需打包，组件方式使用图标
 - 💖[eslint](https://github.com/eslint/eslint): 使用eslint规范代码
 - 🐣[prettier](https://github.com/prettier/prettier): 使用prettier作为代码格式化工具，结合[eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)插件一键格式化代码
+- 🎃[husky](https://github.com/typicode/husky) + [lint-staged](https://github.com/okonet/lint-staged): 提交前自动运行格式化任务
