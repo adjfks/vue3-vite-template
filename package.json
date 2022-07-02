@@ -8,17 +8,20 @@
     "preview": "vite preview",
     "preinstall": "npx only-pkg pnpm",
     "lint": "npx eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "lp": "prettier {src,mock}/**/*.{html,vue,css,less,ts,md,.json} --write",
-    "sl": "npx stylelint **/*{.less,.css} --fix",
-    "prepare": "husky install",
-    "pre-commit": "npm run lp && npm run sl && npm run lint"
+    "lint:prettier": "prettier {src,mock}/**/*.{html,vue,css,less,ts,md,.json} --write",
+    "stylelint": "npx stylelint **/*{.less,.css} --fix",
+    "prepare": "husky install"
   },
   "husky": {
-    "hooks": {}
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{ts,vue}": [
-      "npm run lint"
+      "npm run lint",
+      "npm run lint:prettier",
+      "npm run stylelint"
     ]
   },
   "dependencies": {
