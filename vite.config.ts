@@ -17,7 +17,13 @@ export default defineConfig({
         /\.vue$/, /\.vue\?vue/,
         /\.md$/,
       ],
-      imports: ['vue', 'vue-router']
+      imports: ['vue', 'vue-router'],
+      // 配置eslint解析规则，防止报错
+      eslintrc: {
+        enabled: true, // 设置为true自动生成
+        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+        globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+      },
     }),
     Components({
       resolvers: [

@@ -4,9 +4,12 @@
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  >
   <HelloWorld />
-  <router-view></router-view>
+  <router-view />
 </template>
 
 <style>

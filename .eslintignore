@@ -1,0 +1,5 @@
+**/*.md
+**/node_modules/**
+**/*.d.ts
+**/*.json
+**/*.config.json
