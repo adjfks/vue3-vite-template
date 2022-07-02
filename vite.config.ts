@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 const { resolve } = require('path')
 
 // https://vitejs.dev/config/
@@ -9,12 +10,13 @@ export default defineConfig({
     vue(),
     AutoImport({
       include: [
-        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /\.vue$/, /\.vue\?vue/, // .vue
-        /\.md$/, // .md
+        /\.[tj]sx?$/,
+        /\.vue$/, /\.vue\?vue/,
+        /\.md$/,
       ],
       imports: ['vue', 'vue-router']
-    })
+    }),
+    Components()
   ],
   resolve: {
     alias: {
