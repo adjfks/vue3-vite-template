@@ -8,3 +8,4 @@
 - 🌪️[Vue3.2.25](https://github.com/vuejs/): SFC + composition api
 - 🌿[VueRouter4](https://github.com/vuejs/router): 提供路由支持
 - 🍍[Pinia2.0.14](https://github.com/vuejs/pinia): 全局状态存储
+- 🍄[unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 一个用于自动导入包API的插件
